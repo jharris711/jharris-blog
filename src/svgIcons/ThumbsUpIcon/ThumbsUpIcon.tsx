@@ -3,7 +3,7 @@ interface Props {
   fill?: boolean;
 }
 
-const ThumbsUp = ({ className, fill }: Props) => {
+const ThumbsUpIcon = ({ className, fill }: Props) => {
   return (
     <>
       <svg
@@ -26,4 +26,4 @@ const ThumbsUp = ({ className, fill }: Props) => {
   );
 };
 
-export default ThumbsUp;
+export default ThumbsUpIcon;

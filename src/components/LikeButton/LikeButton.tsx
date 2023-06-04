@@ -2,7 +2,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import { useAuth, useSession } from '@clerk/nextjs';
 import useLikes from '@/hooks/useLikes';
-import ThumbsUp from '@/svgIcons/ThumbsUp';
+import ThumbsUpIcon from '@/svgIcons/ThumbsUpIcon';
 
 interface Props {
   blog_id: number;
@@ -44,7 +44,10 @@ const LikeButton = ({ blog_id, setShowLikeToast }: Props) => {
         className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'
       >
         <span className='text-gray-500 inline-flex items-center leading-none text-sm'>
-          <ThumbsUp className='w-4 h-4 mr-1' fill={usersLike ? true : false} />
+          <ThumbsUpIcon
+            className='w-4 h-4 mr-1'
+            fill={usersLike ? true : false}
+          />
           {(likes && likes.length) ?? 0}
         </span>
       </button>

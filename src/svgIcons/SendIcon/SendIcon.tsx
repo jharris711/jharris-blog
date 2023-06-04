@@ -2,14 +2,14 @@ interface Props {
   className?: string;
 }
 
-const SendMsg = ({ className }: Props) => {
+const SendIcon = ({ className }: Props) => {
   return (
     <>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
         viewBox='0 0 24 24'
-        strokeWidth='1.5'
+        strokeWidth='1.75'
         stroke='currentColor'
         className={className}
       >
@@ -23,4 +23,4 @@ const SendMsg = ({ className }: Props) => {
   );
 };
 
-export default SendMsg;
+export default SendIcon;

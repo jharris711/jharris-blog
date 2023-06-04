@@ -8,7 +8,7 @@ import useComments from '@/hooks/useComments';
 import useBlogPost from '@/hooks/useBlogPost';
 import useTags from '@/hooks/useTags';
 import useFormatBlog from '@/hooks/useFormatMarkdown';
-import CommentBubble from '@/svgIcons/CommentBubble';
+import CommentBubbleIcon from '@/svgIcons/CommentBubbleIcon';
 import { Tag } from '@/types/Tag';
 import Toast from '../Toast';
 
@@ -95,7 +95,7 @@ const BlogPost = ({ id }: Props) => {
             />
             <button className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'>
               <span className='text-gray-500 inline-flex items-center leading-none text-sm'>
-                <CommentBubble className='w-4 h-4 mr-1' />
+                <CommentBubbleIcon className='w-4 h-4 mr-1' />
                 {totalComments}
               </span>
             </button>

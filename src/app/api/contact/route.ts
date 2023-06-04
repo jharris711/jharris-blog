@@ -5,7 +5,7 @@ import { Message } from '@/types/Message';
 /**
  * Send an email to me from the contact form
  */
-const POST = async (req: Request) => {
+export const POST = async (req: Request) => {
   const EMAIL_ADDRESS = process.env.NEXT_PUBLIC_EMAIL_ADDRESS;
   const EMAIL_PASSWORD = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
 
@@ -35,5 +35,3 @@ const POST = async (req: Request) => {
     { status: 200 }
   );
 };
-
-export { POST };

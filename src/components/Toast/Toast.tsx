@@ -1,6 +1,6 @@
-import ThumbsUp from '@/svgIcons/ThumbsUp';
-import CommentBubble from '@/svgIcons/CommentBubble';
-import SendMsg from '@/svgIcons/SendMsg';
+import ThumbsUpIcon from '@/svgIcons/ThumbsUpIcon';
+import CommentBubbleIcon from '@/svgIcons/CommentBubbleIcon';
+import SendIcon from '@/svgIcons/SendIcon';
 
 interface Props {
   message: string;
@@ -35,13 +35,13 @@ const toastType = (type: string) => {
 const toastIcon = (icon: string) => {
   switch (icon) {
     case 'like':
-      return <ThumbsUp className='w-4 h-4 mr-1' />;
+      return <ThumbsUpIcon className='w-4 h-4 mr-1' />;
     case 'comment':
-      return <CommentBubble className='w-4 h-4 mr-1' />;
+      return <CommentBubbleIcon className='w-4 h-4 mr-1' />;
     case 'message':
-      return <SendMsg className='w-4 h-4 mr-1' />;
+      return <SendIcon className='w-4 h-4 mr-1' />;
     default:
-      return <ThumbsUp className='w-4 h-4 mr-1' />;
+      return <ThumbsUpIcon className='w-4 h-4 mr-1' />;
   }
 };
 

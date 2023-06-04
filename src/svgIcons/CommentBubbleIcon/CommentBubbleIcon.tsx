@@ -2,7 +2,7 @@ interface Props {
   className?: string;
 }
 
-const CommentBubble = ({ className }: Props) => {
+const CommentBubbleIcon = ({ className }: Props) => {
   return (
     <>
       <svg
@@ -21,4 +21,4 @@ const CommentBubble = ({ className }: Props) => {
   );
 };
 
-export default CommentBubble;
+export default CommentBubbleIcon;
