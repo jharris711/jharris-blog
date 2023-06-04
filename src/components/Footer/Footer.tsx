@@ -25,6 +25,15 @@ const Footer = () => {
               rel='noopener noreferrer'
             >
               @jheeeeezy
+            </a>{' '}
+            -{' '}
+            <a
+              href='https://www.freeprivacypolicy.com/live/54e972fa-81c1-4db0-9902-6f223497af56'
+              className='text-gray-500 ml-1'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Privacy Policy
             </a>
           </p>
           <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
