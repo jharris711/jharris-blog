@@ -141,7 +141,7 @@ const ContactForm = () => {
                 </button>
               </div>
               <div className='p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center'>
-                <a className='text-indigo-500'>jharriswebdev@gmail.com</a>
+                <a className='text-indigo-500'>josh@jsharris.dev</a>
                 <p className='leading-normal my-5'>Washington, DC Metro-Area</p>
                 <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
                   <a
