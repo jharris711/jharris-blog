@@ -1,6 +1,4 @@
 'use client';
-import { useRef, useEffect } from 'react';
-import sdk from '@stackblitz/sdk';
 import useStackBlitz from '@/hooks/useStackBlitz';
 
 const DemoList = () => {

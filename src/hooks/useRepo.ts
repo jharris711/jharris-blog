@@ -21,8 +21,6 @@ const useRepo = (repoName: string) => {
             'X-GitHub-Api-Version': '2022-11-28',
           },
         });
-
-        console.log(result.data);
         setRepo(result.data);
       };
 

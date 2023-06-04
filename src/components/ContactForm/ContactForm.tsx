@@ -34,8 +34,6 @@ const ContactForm = () => {
     })
       .then((response) => response.json())
       .then((jsonData) => {
-        console.log('Send Msg Response:', jsonData);
-
         setShowToast(true);
         setToastType('success');
         setToastMessage('Message sent successfully!');
@@ -44,8 +42,6 @@ const ContactForm = () => {
         }, 3000);
       })
       .catch((err) => {
-        console.log('err', err);
-
         setShowToast(true);
         setToastType('error');
         setToastMessage(err.message);
