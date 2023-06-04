@@ -7,16 +7,16 @@ import CubeIcon from '@/svgIcons/CubeIcon';
 const Footer = () => {
   return (
     <>
-      <footer className='text-gray-400 bg-gray-900 body-font sticky bottom-0'>
+      <footer className='dark:text-gray-400 dark:bg-gray-900 bg-gray-100 text-gray-900 body-font sticky bottom-0'>
         <div className='container px-4 py-3 mx-auto flex items-center sm:flex-row flex-col'>
           <a
             href='/'
-            className='flex title-font font-medium items-center md:justify-start justify-center text-white'
+            className='flex title-font font-medium items-center md:justify-start justify-center dark:text-white'
           >
             <CubeIcon className='w-10 h-10 text-white p-2 bg-indigo-500 rounded-full' />
             <span className='ml-3 text-xl'>J. Harris Web Dev</span>
           </a>
-          <p className='text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4'>
+          <p className='text-sm dark:text-gray-400 text-indigo-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4'>
             © 2023 J. Harris Web Dev —
             <a
               href='https://twitter.com/jheeeeezy'
@@ -40,28 +40,28 @@ const Footer = () => {
             <a
               href='https://www.facebook.com/jharriswebdev'
               target='_blank'
-              className='text-gray-400'
+              className='dark:text-gray-400 text-indigo-500'
             >
               <FacebookIcon className='w-5 h-5' />
             </a>
             <a
               href='https://twitter.com/jheeeeezy'
               target='_blank'
-              className='ml-3 text-gray-400'
+              className='ml-3 dark:text-gray-400 text-indigo-500'
             >
               <TwitterIcon className='w-5 h-5' />
             </a>
             <a
               href='https://github.com/jharris711'
               target='_blank'
-              className='ml-3 text-gray-400'
+              className='ml-3 dark:text-gray-400 text-indigo-500'
             >
               <GithubIcon className='w-5 h-5' />
             </a>
             <a
               href='https://www.linkedin.com/in/joshsharris/'
               target='_blank'
-              className='ml-3 text-gray-400'
+              className='ml-3 dark:text-gray-400 text-indigo-500'
             >
               <LinkedInIcon className='w-5 h-5' />
             </a>

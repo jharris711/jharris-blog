@@ -58,10 +58,10 @@ const Comments = ({ blog_id }: Props) => {
         {showToast && (
           <Toast message='Comment added!' type='success' icon='comment' />
         )}
-        <section className='text-gray-400 bg-gray-900 body-font '>
+        <section className='dark:text-gray-400 dark:bg-gray-900 bg-gray-200 body-font '>
           <div className='container px-5 py-24 mx-auto'>
             <div className='flex flex-col text-center w-full mb-12'>
-              <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white'>
+              <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 dark:text-white'>
                 Comments
               </h1>
               <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
@@ -81,14 +81,14 @@ const Comments = ({ blog_id }: Props) => {
                       <div className=''>
                         <label
                           htmlFor='message'
-                          className='leading-7 text-sm text-gray-400'
+                          className='leading-7 text-sm dark:text-gray-400 text-indigo-500'
                         >
                           Your Comment
                         </label>
                         <textarea
                           id='comment'
                           name='comment'
-                          className='w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
+                          className='w-full dark:bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:dark:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none dark:text-gray-100 text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
                         ></textarea>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ const Comments = ({ blog_id }: Props) => {
                                 rel='noopener noreferrer'
                                 href='#'
                                 target='_blank'
-                                className='underline dark:text-violet-400'
+                                className='underline dark:text-violet-400 text-indigo-500'
                               >
                                 <span itemProp='name'>{comment.username}</span>
                               </a>{' '}

@@ -33,8 +33,8 @@ const DemoList = () => {
 
   return (
     <>
-      <section className='text-gray-400 bg-gray-900 body-font overflow-hidden text-center'>
-        <h1 className='sm:text-3xl text-2xl font-medium title-font text-center text-white p-8 border-b border-gray-800'>
+      <section className='dark:text-gray-400 text-gray-800 dark:bg-gray-900 rounded body-font overflow-hidden text-center'>
+        <h1 className='sm:text-3xl text-2xl font-medium title-font text-center dark:text-white p-8 border-b border-indigo-500'>
           Code Demos
         </h1>
         <div className='container px-5 py-10 mx-auto'>

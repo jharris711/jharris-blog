@@ -14,8 +14,8 @@ const BlogList = () => {
   if (loaded) {
     return (
       <>
-        <section className='text-gray-400 bg-gray-900 body-font overflow-hidden'>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font text-center text-white p-8 border-b border-gray-800'>
+        <section className='dark:text-gray-400 dark:bg-gray-900 rounded body-font overflow-hidden'>
+          <h1 className='sm:text-3xl text-2xl font-medium title-font text-center dark:text-white p-8 border-b border-indigo-500'>
             Blog Posts
           </h1>
           <div className='container px-5 py-12 mx-auto'>
@@ -30,21 +30,21 @@ const BlogList = () => {
                     {' '}
                     <div className='py-8 flex flex-wrap md:flex-nowrap'>
                       <div className='md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col'>
-                        <span className='font-semibold title-font text-white'>
+                        <span className='font-semibold title-font dark:text-white text-indigo-800'>
                           #{featuredTag?.name}
                         </span>
-                        <span className='mt-1 text-gray-500 text-sm'>
+                        <span className='mt-1 dark:text-gray-500 text-sm'>
                           {date}
                         </span>
                       </div>
                       <div className='md:flex-grow'>
-                        <h2 className='text-2xl font-medium text-white title-font mb-2'>
+                        <h2 className='text-2xl font-medium dark:text-white title-font mb-2'>
                           {title}
                         </h2>
                         <p className='leading-relaxed'>{description}</p>
                         <a
                           href={`/blog/${id}`}
-                          className='text-indigo-400 inline-flex items-center mt-4'
+                          className='dark:text-indigo-400 text-indigo-800 inline-flex items-center mt-4'
                         >
                           Read More
                           <svg

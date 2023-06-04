@@ -17,12 +17,12 @@ export default function Home() {
       <Hero blog={getRandomPost(blogList)} />
       <div className='flex flex-wrap w-full mb-20'>
         <div className='lg:w-1/2 w-full mb-6 lg:mb-0'>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 text-white'>
+          <h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 dark:text-gray-50'>
             Blogs About Tech
           </h1>
           <div className='h-1 w-20 bg-indigo-500 rounded'></div>
         </div>
-        <p className='lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90'>
+        <p className='lg:w-1/2 w-full leading-relaxed dark:text-gray-400 text-opacity-90'>
           Welcome to my blog, where I&apos;ll be sharing information I&apos;ve
           learned or tips that have helped me throughout my career. Thanks for
           reading and happy coding!

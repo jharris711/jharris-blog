@@ -35,7 +35,7 @@ const BlogPost = ({ id }: Props) => {
       <>
         <article className='max-w-2xl px-6 py-8 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50'>
           <div className='w-full mx-auto space-y-2 text-center'>
-            <p className='text-xs font-semibold tracking-wider uppercase'>
+            <p className='text-xs font-semibold tracking-wider uppercase text-indigo-500'>
               #{featuredTag?.name}
             </p>
             <h1 className='text-4xl font-bold leading-tight md:text-5xl'>
@@ -47,7 +47,7 @@ const BlogPost = ({ id }: Props) => {
                 rel='noopener noreferrer'
                 href='#'
                 target='_blank'
-                className='underline dark:text-violet-400'
+                className='underline dark:text-violet-400  text-indigo-500'
               >
                 <span itemProp='name'>{user_id}</span>
               </a>{' '}
@@ -79,8 +79,8 @@ const BlogPost = ({ id }: Props) => {
                 showLikeToast={showLikeToast}
                 setShowLikeToast={setShowLikeToast}
               />
-              <button className='inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'>
-                <span className='text-gray-500 inline-flex items-center leading-none text-sm'>
+              <button className='inline-flex items-center dark:bg-gray-800 bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'>
+                <span className='dark:text-gray-500 text-gray-200 inline-flex items-center leading-none text-sm'>
                   <CommentBubbleIcon className='w-4 h-4 mr-1' />
                   {totalComments}
                 </span>
