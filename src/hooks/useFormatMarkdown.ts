@@ -20,6 +20,11 @@ const useFormatBlog = (blog: Blog | null) => {
       el.classList.add('dark:text-gray-50');
     });
 
+    const breaks = container.querySelectorAll('br, hr');
+    breaks.forEach((el) => {
+      el.classList.add('border-indigo-500');
+    });
+
     const codeElements = container.querySelectorAll('code, pre');
 
     codeElements.forEach((el) => {
@@ -37,8 +42,8 @@ const useFormatBlog = (blog: Blog | null) => {
         'text-left',
         'items-center',
         'space-x-4',
-        'bg-gray-100',
-        'text-white',
+        'dark:bg-gray-100',
+        'dark:text-white',
         'rounded-lg',
         'p-4',
         'pl-6'
