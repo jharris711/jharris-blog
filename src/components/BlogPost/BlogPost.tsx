@@ -79,8 +79,8 @@ const BlogPost = ({ id }: Props) => {
                 showLikeToast={showLikeToast}
                 setShowLikeToast={setShowLikeToast}
               />
-              <button className='inline-flex items-center dark:bg-gray-800 bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'>
-                <span className='dark:text-gray-500 text-gray-200 inline-flex items-center leading-none text-sm'>
+              <button className='inline-flex items-center bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0'>
+                <span className='text-gray-200 inline-flex items-center leading-none text-sm'>
                   <CommentBubbleIcon className='w-4 h-4 mr-1' />
                   {totalComments}
                 </span>
