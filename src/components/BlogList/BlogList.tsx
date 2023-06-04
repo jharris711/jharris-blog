@@ -11,7 +11,7 @@ const BlogList = () => {
 
   console.log(blogList);
 
-  if (isLoading || !blogList)
+  if (isLoading || !blogList || !tags)
     return (
       <>
         <div className='my-16'>
